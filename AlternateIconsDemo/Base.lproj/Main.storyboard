@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkK-fA-LBz">
+                                <rect key="frame" x="71" y="57" width="232.5" height="72.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Alternate Icons Demo">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="点击图片来更换">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" Icon">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s64-nW-cbg">
+                                <rect key="frame" x="147" y="433.5" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="djZ-4P-JhB"/>
+                                    <constraint firstAttribute="width" constant="80" id="ga8-D3-Xa4"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Icon2.png"/>
+                                <connections>
+                                    <action selector="clickIcon2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nmz-u0-7AA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jh-R0-bdz">
+                                <rect key="frame" x="147" y="313.5" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="4nH-uD-gnX"/>
+                                    <constraint firstAttribute="width" constant="80" id="FWX-DN-BDP"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Icon1.png"/>
+                                <connections>
+                                    <action selector="clickIcon1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wVW-KX-eXa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tl-f2-bID">
+                                <rect key="frame" x="147" y="193" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="DvR-SR-76A"/>
+                                    <constraint firstAttribute="height" constant="80" id="kgt-JK-kIt"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Icon.png"/>
+                                <connections>
+                                    <action selector="clickIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0I-XG-mRN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Tl-f2-bID" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="08Y-CK-h3F"/>
+                            <constraint firstItem="s64-nW-cbg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Y6-qd-L4i"/>
+                            <constraint firstItem="6jh-R0-bdz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="41Q-b4-ntY"/>
+                            <constraint firstItem="ZkK-fA-LBz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7kC-EB-ixS"/>
+                            <constraint firstItem="6jh-R0-bdz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Iir-fh-JPU"/>
+                            <constraint firstItem="s64-nW-cbg" firstAttribute="top" secondItem="6jh-R0-bdz" secondAttribute="bottom" constant="40" id="Lph-lY-Gw6"/>
+                            <constraint firstItem="6jh-R0-bdz" firstAttribute="top" secondItem="8Tl-f2-bID" secondAttribute="bottom" constant="40" id="V9u-ol-IFW"/>
+                            <constraint firstItem="ZkK-fA-LBz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="iRm-ZI-hAI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon.png" width="60" height="60"/>
+        <image name="Icon1.png" width="60" height="60"/>
+        <image name="Icon2.png" width="60" height="60"/>
+    </resources>
+</document>
